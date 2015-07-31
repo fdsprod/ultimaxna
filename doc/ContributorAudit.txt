@@ -1,0 +1,28 @@
+slayde1970
+dev/Ultima/IO/RadarColorData.cs
+	Fixed radar Colors array length init for 7.0.7.1 and newer clients.
+
+Aatu
+UltimaXNA/UltimaXNA/Input/Events/InputEventKeyboard.cs
+UltimaXNA/UltimaXNA/Input/InputState.cs
+UltimaXNA/UltimaXNA/Input/WndProc.cs
+	Added KeyChar handling.
+	Made WmKeyEvent method on WM_CHAR or WM_SYSCHAR functional.
+
+robertdeclaux
+dev/UltimaEntities/MobileMovement.cs
+	Changed the way that mobiles are blocked on diagonal movement.
+dev/UltimaGUI/WorldGumps/ChatWindow.cs
+	Added prev/next functionality.
+dev/UltimaGUI/WorldGumps/JournalGump.cs
+	Added journal functionality.
+
+sgorman
+UltimaXNA/UltimaXNA/Code/Network/GameClient.cs
+UltimaXNA/UltimaXNA/Code/GUI/GUI.cs
+	Added m_ReceiveDragItem method in GameClient.
+	Added functionality to allow movement of items between containers.
+
+smjert
+UltimaXNA/UltimaXNA/Code/DataLocal/TileData.cs
+	Added stairs
