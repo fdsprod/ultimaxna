@@ -276,6 +276,7 @@
     <Compile Include="Ultima\Data\MessageTypes.cs" />
     <Compile Include="Ultima\Data\TileFlags.cs" />
     <Compile Include="Ultima\World\Entities\Mobiles\MobileSounds.cs" />
+    <Compile Include="Ultima\World\Entities\Mobiles\MoveEvents.cs" />
     <Compile Include="Ultima\World\Entities\Mobiles\MovementSpeed.cs" />
     <Compile Include="Ultima\IO\StaticTile.cs" />
     <Compile Include="Ultima\LoginModel.cs" />
