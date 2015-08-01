@@ -25,4 +25,7 @@ UltimaXNA/UltimaXNA/Code/GUI/GUI.cs
 
 smjert
 UltimaXNA/UltimaXNA/Code/DataLocal/TileData.cs
-	Added stairs
+	Added stairs (ItemsID are in UltimaData namespace; movement checking replaced by RunUO code).
+    Added mount animation data handling (in Ultima namespace)
+    Added speed calculation, distance calculation (since rewritten).
+    
