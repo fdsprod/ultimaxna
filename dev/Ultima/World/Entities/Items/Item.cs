@@ -21,6 +21,38 @@ namespace UltimaXNA.Ultima.World.Entities.Items
 {
     public class Item : AEntity
     {
+        // ============================================================
+        // Sort properties
+        // ============================================================
+
+        public override int SortType
+        {
+            get
+            {
+                // If corpse, then sort type is higher.
+                return ((ItemID & 0x3fff) == 0x2006) ? 4 : 2;
+            }
+        }
+
+        public override int SortThreshold
+        {
+            get
+            {
+                int threshold = ItemData.IsBackground ? 0 : 1;
+                threshold = (ItemData.Height == 0) ? threshold : threshold + 1;
+                return threshold;
+            }
+        }
+
+        public override int SortTiebreaker
+        {
+            get { return (int)this.Serial; }
+        }
+
+        // ============================================================
+        // Properties
+        // ============================================================
+
         public AEntity Parent = null;
 
         public override string Name

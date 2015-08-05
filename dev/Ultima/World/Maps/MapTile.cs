@@ -234,7 +234,7 @@ namespace UltimaXNA.Ultima.World.Maps
                 if (m_NeedsSorting)
                 {
                     InternalRemoveDuplicateEntities();
-                    TileSorter.Sort(m_Entities);
+                    EntitySorter.Sort(m_Entities);
                     m_NeedsSorting = false;
                 }
                 return m_Entities;

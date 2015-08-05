@@ -19,6 +19,33 @@ namespace UltimaXNA.Ultima.World.Entities
 {
     public class DeferredEntity : AEntity
     {
+        // ============================================================
+        // Sort properties
+        // ============================================================
+        public override int SortZ
+        {
+            get { return this.Z; }
+        }
+
+        public override int SortType
+        {
+            get { return 2; }
+        }
+
+        public override int SortThreshold
+        {
+            get { return 1; }
+        }
+
+        public override int SortTiebreaker
+        {
+            get { return 0; }
+        }
+
+        // ============================================================
+        // Properties
+        // ============================================================
+
         private int m_Z;
         public new int Z
         {

@@ -21,6 +21,25 @@ namespace UltimaXNA.Ultima.World.Entities.Mobiles
     public class Mobile : AEntity
     {
         // ============================================================
+        // Sort properties
+        // ============================================================
+
+        public override int SortType
+        {
+            get { return 3; }
+        }
+
+        public override int SortThreshold
+        {
+            get { return 2; }
+        }
+
+        public override int SortTiebreaker
+        {
+            get { return IsClientEntity ? (int)0x40000000 : (int)this.Serial; }
+        }
+
+        // ============================================================
         // Ctor, Dispose, Update, and CreateView()
         // ============================================================
 

@@ -20,6 +20,18 @@ namespace UltimaXNA.Ultima.World.Entities
     {
         // !!! Don't forget to update surrounding Z values - code is in UpdateSurroundingsIfNecessary(map)
 
+        // ============================================================
+        // Sort properties
+        // ============================================================
+        public override int SortZ
+        {
+            get { return GetView().SortZ; }
+        }
+
+        // ============================================================
+        // Properties
+        // ============================================================
+
         private int m_LandDataID;
         public int LandDataID
         {

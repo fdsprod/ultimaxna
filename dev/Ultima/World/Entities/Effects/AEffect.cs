@@ -17,6 +17,22 @@ namespace UltimaXNA.Ultima.World.Entities.Effects
 {
     public abstract class AEffect : AEntity
     {
+        // ============================================================
+        // Sort properties
+        // ============================================================
+        public override int SortType
+        {
+            get { return 4; }
+        }
+
+        public override int SortThreshold
+        {
+            get { return 2; }
+        }
+
+        // ============================================================
+        // Properties
+        // ============================================================
         private List<AEffect> m_Children;
         public List<AEffect> Children
         {

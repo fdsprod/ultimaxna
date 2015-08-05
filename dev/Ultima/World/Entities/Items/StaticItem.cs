@@ -17,6 +17,24 @@ namespace UltimaXNA.Ultima.World.Entities.Items
     {
         public int SortInfluence = 0;
 
+        // ============================================================
+        // Sort properties
+        // ============================================================
+
+        public override int SortType
+        {
+            get { return 1; }
+        }
+
+        public override int SortTiebreaker
+        {
+            get { return SortInfluence; }
+        }
+
+        // ============================================================
+        // Properties
+        // ============================================================
+
         public StaticItem(int itemID, int hue,  int sortInfluence, Map map)
             : base(Serial.Null, map)
         {

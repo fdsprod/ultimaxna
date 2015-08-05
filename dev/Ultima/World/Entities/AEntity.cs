@@ -28,6 +28,29 @@ namespace UltimaXNA.Ultima.World.Entities
         public OnEvent OnEntityUpdated;
 
         // ============================================================
+        // Sort properties
+        // ============================================================
+        public virtual int SortZ
+        {
+            get { return this.Z; }
+        }
+
+        public virtual int SortType
+        {
+            get { return 0; }
+        }
+
+        public virtual int SortThreshold
+        {
+            get { return 0; }
+        }
+
+        public virtual int SortTiebreaker
+        {
+            get { return 0; }
+        }
+
+        // ============================================================
         // Properties
         // ============================================================
 

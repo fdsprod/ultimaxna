@@ -9,8 +9,8 @@
  *
  ***************************************************************************/
 #region usings
-using System;
 using Microsoft.Xna.Framework;
+using System;
 using UltimaXNA.Ultima.Data;
 using UltimaXNA.Ultima.IO;
 using UltimaXNA.Ultima.World.Entities.Multis;
